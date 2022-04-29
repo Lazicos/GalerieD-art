@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<!-- Portfolio et contact de Véronique Filipetti -->
+<html>
+<head>
+	<!-- Encodage de la page + nom de l'onglet -->
+	<meta charset="utf-8" />
+	<title>Projet de Web design</title>
+	<link rel="stylesheet" href="style.css" />
+	<!-- Image icone pour l'entête : un des tableaux -->
+	<link rel="icon" type="image/jpg" href="tableaux/patchwork.jpg" />
+</head>
+
+<body>
+	<div id="bloc_page">
+
+		<!-- Header (partie haute de la page) -->
+		<header>
+			<div id="titre_principal">
+				<h1>Galerie de Véro</h1>
+			</div>
+
+			<!-- Menu de navigation -->
+			<nav>
+				<ul>
+					<li class="page_actuelle">Accueil</li>
+					<li><a href="a_propos.html">A propos</a></li>
+					<li class="dropdown">
+						<a href="#">Portfolio</a>
+						<ul class="dropdown_content">
+							<li><a href="abstrait.html">Art abstrait</a></li>
+							<li><a href="dessins.html">Dessins</a></li>
+							<li><a href="paysages.html">Paysages</a></li>
+							<li><a href="photos.html">Photographies</a></li>
+							<li><a href="portraits.html">Portraits</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Derniers ajouts -->
+
+		<span id="dernier_ajout_abstrait" class="target"></span>
+		<span id="dernier_ajout_dessins" class="target"></span>
+		<span id="dernier_ajout_paysage" class="target"></span>
+		<span id="dernier_ajout_photos" class="target"></span>
+		<span id="dernier_ajout_portrait" class="target"></span>
+
+		<div class="cadre_diapo">
+			<div class="interieur_diapo">
+				<div class=description>
+					<span>
+						Un tableau abstrait coloré
+					</span>
+					<a href="abstrait.html#dernier_ajout_abstrait"><img src="tableaux/patchwork.jpg" alt="Tableau d'art abstrait"></a>
+				</div>
+				<div class=description>
+					<span>
+						Portrait d'une femme pensive
+					</span>
+					<a href="dessins.html#dernier_ajout_dessins"><img src="tableaux/portrait2.jpg" alt="Tableau de portrait monochrome"></a>
+				</div>
+				<div class=description>
+					<span>
+						Un paysage futuristique aux teints rouges
+					</span>
+					<a href="paysages.html#dernier_ajout_paysage"><img src="tableaux/paysage_rouge.jpg" alt="Tableau de paysage rouge"></a>
+				</div>
+				<div class=description>
+					<span>
+						Une nature morte aux couleurs vibrantes
+					</span>
+					<a href="photos.html#dernier_ajout_photos"><img src="tableaux/nature_morte.jpg" alt="Nature morte"></a>
+				</div>
+				<div class=description>
+					<span>
+						Un portrait
+					</span>
+					<a href="portraits.html#dernier_ajout_portrait"><img src="tableaux/portrait1.jpg" alt="Portrait"></a>
+				</div>
+			</div>
+
+			<ul class="navigation_diapo">
+				<li>
+					<a href="#dernier_ajout_abstrait">
+						<img src="tableaux/patchwork.jpg" alt="Tableau d'art abstrait">
+					</a>
+				</li>
+				<li>
+					<a href="#dernier_ajout_dessins">
+						<img src="tableaux/portrait2.jpg" alt="Tableau de portrait monochrome">
+					</a>
+				</li>
+				<li>
+					<a href="#dernier_ajout_paysage">
+						<img src="tableaux/paysage_rouge.jpg" alt="Tableau de paysage rouge">
+					</a>
+				</li>
+				<li>
+					<a href="#dernier_ajout_photos">
+						<img src="tableaux/nature_morte.jpg" alt="Nature morte">
+					</a>
+				</li>
+				<li>
+					<a href="#dernier_ajout_portrait">
+						<img src="tableaux/portrait1.jpg" alt="Portrait">
+					</a>
+				</li>
+			</ul>
+		</div>
+
+
+
+		<!-- Derniers evenements -->
+		<div>
+			<section>
+				<article>
+					<h2>Derniers évenements</h2>
+					<ul>
+						<li> <em>Date</em> Lieu et lien expo </li>
+						<li> <em>Date</em> Lieu et lien expo </li>
+						<li> <em>Date</em> Lieu et lien expo </li>
+					</ul>
+				</article>
+			</section>
+		</div>
+
+		<!-- Footer (bas de page) -->
+		<footer>
+			<!-- Réseaux --> 
+			<ul class="reseaux">
+				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
+			</ul>
+		</div>
+	</footer>
+
+</body>
+</html>

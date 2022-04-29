@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Encodage de la page + nom de l'onglet -->
+        <meta charset="utf-8" />
+        <title>Projet de Web design</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- Image icone pour l'entête : un des tableaux -->
+        <link rel="icon" type="image/jpg" href="tableaux/patchwork.jpg" />
+    </head>
+
+    <body>
+    <div id="bloc_page">
+
+        <!-- Header (partie haute de la page) -->
+        <header>
+            <div id="titre_principal">
+                <h1>Galerie de Véro</h1>
+            </div>
+
+            <!-- Menu de navigation -->
+            <nav>
+                <ul>
+                    <li><a href="home2.html">Accueil</a></li>
+                    <li><a href="a_propos.html">A propos</a></li>
+                    <li class="dropdown page_actuelle">
+                        <a href="#">Portfolio</a>
+                        <ul class="dropdown_content">
+                            <li><a href="abstrait.html">Art abstrait</a></li>
+                            <li class="page_actuelle">Dessins</li>
+                            <li><a href="paysages.html">Paysages</a></li>
+                            <li><a href="photos.html">Photographies</a></li>
+                            <li><a href="portraits.html">Portraits</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+         <!--Les tableaux abstraits -->
+        <section>
+            <h1>Une présentation de différents dessins réalisés</h1>
+            <p>
+                Le dessin est une technique de représentation visuelle sur support plat. Cela désgne a la foi l'act, le produit et la forme de l'objet représenté. 
+                </br>
+                Le dessin est une pratique fondamentale pour toute poursuite de l'art dans d'autres domaines comme la peinture ou la sculpture.
+                </br>
+                J'ai utilisé ici des techniques de...
+            </p>
+
+            <!-- Pour l'esthétique on fait alterner l'image a droite et a gauche -->
+            <article class="fiche_oeuvre">
+                <table id="dernier_ajout_dessins">
+                    <tr>
+                        <td>
+                            <img src="tableaux/portrait2.jpg" class="photo_tableau" alt="Tableau de portrait monochrome"/>
+                        </td>
+                        <td class="description">
+                            <ul>
+                                <li class="nom_tableau">Femme pensive</li>
+                                <li><em>Taille : </em>20*30 cm</li>
+                                <li><em>Date : </em>Septembre 2022</li>
+                                <li><em>Technique : </em>Fuseau et collage</li>
+                                <li><em>Prix : </em>130 €</li>
+                                <li><em>Disponiblité : </em>Oui</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+
+            <article class="fiche_oeuvre">
+                <table>
+                    <tr>
+                        <td class="description">
+                            <ul>
+                                <li class="nom_tableau">???</li>
+                                <li><em>Taille : </em>???</li>
+                                <li><em>Date : </em>???</li>
+                                <li><em>Technique : </em>???</li>
+                                <li><em>Prix : </em>???</li>
+                                <li><em>Disponiblité : </em>???</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <img src="a_propos/beru.png" class="photo_tableau" alt="photo véro"/>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+
+            <article class="fiche_oeuvre">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="a_propos/beru.png" class="photo_tableau" alt="photo véro"/>
+                        </td>
+                        <td class="description">
+                            <ul>
+                                <li class="nom_tableau">???</li>
+                                <li><em>Taille : </em>???</li>
+                                <li><em>Date : </em>???</li>
+                                <li><em>Technique : </em>???</li>
+                                <li><em>Prix : </em>???</li>
+                                <li><em>Disponiblité : </em>???</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+        <!-- Footer (bas de page) -->
+        <footer>
+            <!-- Réseaux --> 
+            <ul class="reseaux">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                <li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

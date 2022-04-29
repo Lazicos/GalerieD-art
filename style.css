@@ -1,0 +1,293 @@
+/***** Mise en page générale *****/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #A9A99E;
+    font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+    color: #FFF;
+}
+
+#bloc_page {
+    width: 100%;
+    margin: auto;
+}
+
+/***** Haut de page (header) *****/
+
+header {
+    background: url('tableaux/patchwork.jpg') bottom;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin: 20px 30px;
+}
+
+/***** Navigation *****/
+
+nav {
+    background-color: #D62839;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 39px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-left: 30px;
+}
+
+nav li {
+    /*margin-right: 15px;*/
+    padding: 10px;
+}
+
+.page_actuelle {
+    /*background-color: #BE2332;*/
+    background-color: #9B1C29;
+}
+
+/* On veut avoir un menu qui apparait lorsque l'on passe sur "portfolio" */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: #D62839;
+  /*min-width: 10px;*/
+  /*padding: 12px;*/
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+/* Gestion de l'apparence des liens de pages du menu */
+
+nav a {
+    font-size: 1em;
+    color: #FFF;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bolder;
+    border-bottom: 1px solid;
+}
+
+
+/***** Corps *****/
+
+section {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    /*justify-content: center;*/
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+}
+
+/* Diapo dernieres entrées */
+
+.interieur_diapo img{
+    height: 300px;
+    width: auto;
+    max-width: 600px;
+
+}
+
+/*pour le saut de page, on cree une classe que l'on met en display:none*/
+.target{
+    display: none
+}
+
+
+/* Déclaration des propriétées du cadre et du contenu des images */
+
+.cadre_diapo{
+    max-width: 600px;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+
+.interieur_diapo{
+    display: flex;
+    justify-content: space-around;
+    width: 500%;
+    transition: transform 2s .5s
+}
+
+.interieur_diapo .description{
+    position: relative;
+}
+
+.description span{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 2%;
+    font-size: 75%;
+    display: flex;
+    padding: .5rem;
+    justify-content: center;
+    color: white;
+    background: rgba(66, 72, 77, 0.6)
+}
+
+/* Passage d'une image a une autre en cliquant sur les images en dessous du diapo */
+
+
+#dernier_ajout_abstrait:target ~ .cadre_diapo .interieur_diapo{
+    transform:translatex(0)
+}
+
+#dernier_ajout_dessins:target ~ .cadre_diapo .interieur_diapo{
+    transform:translatex(-20%)
+}
+
+#dernier_ajout_paysage:target ~ .cadre_diapo .interieur_diapo{
+    transform:translatex(-40%)
+}
+
+#dernier_ajout_photos:target ~ .cadre_diapo .interieur_diapo{
+    transform:translatex(-60%)
+}
+
+#dernier_ajout_portrait:target ~ .cadre_diapo .interieur_diapo{
+    transform:translatex(-80%)
+}
+
+/*navigation avec images miniatures*/
+.navigation_diapo {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+.navigation_diapo li {
+    padding: .4rem;
+}
+
+.navigation_diapo img{
+    max-height: 50px;
+    border: 3px solid white;
+    box-shadow:0 0 5px rgba(66, 72, 77, 0.6);
+}
+
+@media (min-width:31.25rem){
+    .description span{
+        font-size: initial
+    }
+}
+
+
+/* Partie a propos */
+
+
+/* Partie sur les oeuvres */
+
+.fiche_oeuvre {
+    margin: 15px;
+    border-radius: 20px;
+    background-color: #D62839;
+    width: 80%;
+    justify-items: center;
+}
+
+.fiche_oeuvre ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 20px;
+    justify-content: center;
+}
+
+.fiche_oeuvre table {
+    width: 100%;
+}
+
+.fiche_oeuvre .nom_tableau {
+    font-weight: bolder;
+}
+
+.fiche_oeuvre .description {
+    width: 60%;
+}
+
+.photo_tableau {
+    display: block;
+    border-radius: 20px;
+    margin: auto;
+    width: auto; 
+    max-width: 100%;
+    max-height: 200px; 
+}
+
+/* Formulaire de contact */
+.contact_form {
+    padding-bottom: 20px;
+}
+
+#name{
+    font-size: 1em;
+    width: 200px;
+}
+
+#email{
+    font-size: 1em;
+    width: 200px;
+}
+
+#message{
+    width: 415px;
+    height: 300px;
+    resize: none;
+}
+
+#envoyer {
+    font-size: 1em;
+    color: #FFF;
+    background-color: #D62839;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+:required
+{
+    background-color: red;
+}
+
+/***** Pied de page (footer) *****/
+
+footer {
+    background-color: #42484D;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    min-height: 200px;
+    flex-direction: column;
+}

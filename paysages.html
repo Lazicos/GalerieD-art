@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Encodage de la page + nom de l'onglet -->
+        <meta charset="utf-8" />
+        <title>Projet de Web design</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- Image icone pour l'entête : un des tableaux -->
+        <link rel="icon" type="image/jpg" href="tableaux/patchwork.jpg" />
+    </head>
+
+    <body>
+    <div id="bloc_page">
+
+        <!-- Header (partie haute de la page) -->
+        <header>
+            <div id="titre_principal">
+                <h1>Galerie de Véro</h1>
+            </div>
+
+            <!-- Menu de navigation -->
+            <nav>
+                <ul>
+                    <li><a href="home2.html">Accueil</a></li>
+                    <li><a href="a_propos.html">A propos</a></li>
+                    <li class="dropdown page_actuelle">
+                        <a href="#">Portfolio</a>
+                        <ul class="dropdown_content">
+                            <li><a href="abstrait.html">Art abstrait</a></li>
+                            <li><a href="dessins.html">Dessins</a></li>
+                            <li class="page_actuelle">Paysages</li>
+                            <li><a href="photos.html">Photographies</a></li>
+                            <li><a href="portraits.html">Portraits</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+         <!--Les tableaux abstraits -->
+        <section>
+            <h1>Une présentation de différents tableaux de paysages réalisés</h1>
+            <p>
+                Les peintures paysagistes permettent de retranscrire la grandeure de la nature tel qu'elle est perçue par l'artiste. 
+                </br>
+                BLABLABLA
+                </br>
+                J'ai utilisé ici des techniques de...
+            </p>
+
+            <!-- Pour l'esthétique on fait alterner l'image a droite et a gauche -->
+            <article class="fiche_oeuvre">
+                <table id="dernier_ajout_paysage">
+                    <tr>
+                        <td>
+                            <img src="tableaux/paysage_rouge.jpg" class="photo_tableau" alt="photo véro"/>
+                        </td>
+                        <td class="description">
+                            <ul>
+                                <li class="nom_tableau">Paysage rouge</li>
+                                <li><em>Taille : </em>20*30 cm</li>
+                                <li><em>Date : </em>Août 2020</li>
+                                <li><em>Technique : </em>Peinture à l'huile</li>
+                                <!-- <li><em>Prix : </em>???</li> -->
+                                <li><em>Disponiblité : </em>Vendu</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+
+            <article class="fiche_oeuvre">
+                <table>
+                    <tr>
+                        <td class="description">
+                            <ul>
+                                <li class="nom_tableau">???</li>
+                                <li><em>Taille : </em>???</li>
+                                <li><em>Date : </em>???</li>
+                                <li><em>Technique : </em>???</li>
+                                <li><em>Prix : </em>???</li>
+                                <li><em>Disponiblité : </em>???</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <img src="a_propos/beru.png" class="photo_tableau" alt="photo véro"/>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+
+            <article class="fiche_oeuvre">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="a_propos/beru.png" class="photo_tableau" alt="photo véro"/>
+                        </td>
+                        <td class="description">
+                            <ul>
+                                <li class="nom_tableau">???</li>
+                                <li><em>Taille : </em>???</li>
+                                <li><em>Date : </em>???</li>
+                                <li><em>Technique : </em>???</li>
+                                <li><em>Prix : </em>???</li>
+                                <li><em>Disponiblité : </em>???</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+        <!-- Footer (bas de page) -->
+        <footer>
+            <!-- Réseaux --> 
+            <ul class="reseaux">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                <li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

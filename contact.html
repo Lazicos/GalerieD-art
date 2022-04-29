@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Encodage de la page + nom de l'onglet -->
+        <meta charset="utf-8" />
+        <title>Projet de Web design</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- Image icone pour l'entête : un des tableaux -->
+        <link rel="icon" type="image/jpg" href="tableaux/patchwork.jpg" />
+    </head>
+
+    <body>
+    <div id="bloc_page">
+
+        <!-- Header (partie haute de la page) -->
+        <header>
+            <div id="titre_principal">
+                <h1>Galerie de Véro</h1>
+            </div>
+
+            <!-- Menu de navigation -->
+            <nav>
+                <ul>
+                    <li><a href="home2.html">Accueil</a></li>
+                    <li><a href="a_propos.html">A propos</a></li>
+                    <li class="dropdown">
+                        <a href="#">Portfolio</a>
+                        <ul class="dropdown_content">
+                            <li><a href="abstrait.html">Art abstrait</a></li>
+                            <li><a href="dessins.html">Dessins</a></li>
+                            <li><a href="paysages.html">Paysages</a></li>
+                            <li><a href="photos.html">Photographies</a></li>
+                            <li><a href="portraits.html">Portraits</a></li>
+                        </ul>
+                    </li>
+                    <li class="page_actuelle">Contact</li>
+                </ul>
+            </nav>
+        </header>
+
+         <!--Grand formulaire de contact -->
+        <section>
+            <h1>Contactez-moi</h1>
+
+            <article id="contact">
+                <p>Si vous désirez me contacter pour une commande ou toute autre solicitation, je vous remercie d'utiliser le formulaire ci-après et je vous répondrais dès que possible.</p>
+                <section class="contact_form">
+                    <div>
+                        <form method="post" action="traitement.php">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="text" name="nom" id="name" placeholder="Nom" />
+                                    </td>
+
+                                    <td>
+                                        <input type="email" name="email" id="email" placeholder="Email" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="submit" id="envoyer" value="Envoyer le message" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </section>
+
+            </article>
+        </section>
+
+        <!-- Footer (bas de page) -->
+        <footer>
+            <div class="container">
+                            </div>
+
+            <!-- Réseaux --> 
+            <ul class="reseaux">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                <li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
