@@ -81,7 +81,7 @@ nav li {
 
 /* Gestion de l'apparence des liens de pages du menu */
 
-nav a {
+a {
     font-size: 1em;
     color: #FFF;
     padding-bottom: 3px;
@@ -111,8 +111,9 @@ section {
 .interieur_diapo img{
     height: 300px;
     width: auto;
-    max-width: 600px;
-
+    max-width: 100%;
+    display: block;
+    margin: auto;
 }
 
 /*pour le saut de page, on cree une classe que l'on met en display:none*/
@@ -124,20 +125,21 @@ section {
 /* Déclaration des propriétées du cadre et du contenu des images */
 
 .cadre_diapo{
-    max-width: 600px;
+    max-width: 80%;
     margin: 2rem auto;
     overflow: hidden;
 }
 
 .interieur_diapo{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 500%;
     transition: transform 2s .5s
 }
 
 .interieur_diapo .description{
     position: relative;
+    width: 100%;
 }
 
 .description span{
@@ -203,7 +205,11 @@ section {
 
 
 /* Partie a propos */
-
+#presentation img {
+    height: 350px;
+    float: right;
+    margin: 20px;
+}
 
 /* Partie sur les oeuvres */
 
