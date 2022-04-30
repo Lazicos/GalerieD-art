@@ -1,6 +1,7 @@
 # GalerieD-art
 This is a project made in my fourth year of engineering school. The goal was to develop a website for my step-mother's hobbie
 
+COPYRIGHT! Toutes les images de ce projet appartiennent à Véronique Filipetti et ne doivent en aucun cas être utilisées par des tierces personnes. 
 
 Ce site internet doit permettre à ma belle-mère de montrer certaines de ces créations à n'importe quel moment à des personnes intéressées par son art.
 Les demandes initiales étaient de :
