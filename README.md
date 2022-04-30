@@ -3,6 +3,9 @@ This is a project made in my fourth year of engineering school. The goal was to 
 
 COPYRIGHT! Toutes les images de ce projet appartiennent à Véronique Filipetti et ne doivent en aucun cas être utilisées par des tierces personnes. 
 
+Site réalisé par Malaury Bauthier, MIN, P2023 EPF.
+
+
 Ce site internet doit permettre à ma belle-mère de montrer certaines de ses créations à n'importe quel moment à des personnes intéressées par son art.
 Les demandes initiales étaient de :
 - voir les oeuvres avec leur description
