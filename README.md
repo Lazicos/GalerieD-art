@@ -3,7 +3,7 @@ This is a project made in my fourth year of engineering school. The goal was to 
 
 COPYRIGHT! Toutes les images de ce projet appartiennent à Véronique Filipetti et ne doivent en aucun cas être utilisées par des tierces personnes. 
 
-Ce site internet doit permettre à ma belle-mère de montrer certaines de ces créations à n'importe quel moment à des personnes intéressées par son art.
+Ce site internet doit permettre à ma belle-mère de montrer certaines de ses créations à n'importe quel moment à des personnes intéressées par son art.
 Les demandes initiales étaient de :
 - voir les oeuvres avec leur description
 - Pouvoir contacter ma belle-mère
@@ -15,7 +15,8 @@ Le PHP n'est pas encore au point, la page de contact ne permet donc pas d'envoye
 
 Difficultés rencontrées:
 - la gestion des images dans les cadres des oeuvres, j'ai eu beaucoup de mal a avoir un rendu dont j'étais satisfaite
-- Le menu avec le drop down,'est dû regarder des tutoriels et les adapter à mon projet
-- Le cadre de diaporama des dernières oeuvres, de même.
+- Le menu avec le drop down, j'ai dû regarder des tutoriels et les adapter à mon projet
+- Le cadre de diaporama des dernières oeuvres, de même
+- Le php, le temps m'a manqué pour faire cette partie.
 
 Dans le futur j'aimerais développer le Php pour que l'ajout de création soit automatisé tout comme les images des derniers ajouts. En effet, l'idée est que je donne un site fonctionnel et facile d'entretien à ma belle-mère et mon père.
