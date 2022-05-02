@@ -1,5 +1,4 @@
 # GalerieD-art
-This is a project made in my fourth year of engineering school. The goal was to develop a website for my step-mother's hobbie
 
 COPYRIGHT! Toutes les images de ce projet appartiennent à Véronique Filipetti et ne doivent en aucun cas être utilisées par des tierces personnes. 
 

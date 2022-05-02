@@ -1,3 +1,5 @@
+/****** Mise en forme du site ******/
+
 /***** Mise en page générale *****/
 body {
     margin: 0;
@@ -50,12 +52,10 @@ nav ul {
 }
 
 nav li {
-    /*margin-right: 15px;*/
     padding: 10px;
 }
 
 .page_actuelle {
-    /*background-color: #BE2332;*/
     background-color: #9B1C29;
 }
 
@@ -100,13 +100,12 @@ section {
     width: 80%;
     display: flex;
     margin: auto;
-    /*justify-content: center;*/
     align-items: center;
     text-align: justify;
     flex-direction: column;
 }
 
-/* Diapo dernieres entrées */
+/*** Diaporama des dernieres entrées ***/
 
 .interieur_diapo img{
     height: 300px;
@@ -116,11 +115,11 @@ section {
     margin: auto;
 }
 
-/*pour le saut de page, on cree une classe que l'on met en display:none*/
+/* Pour le saut de page, on cree une classe que l'on met en display:none */
+
 .target{
     display: none
 }
-
 
 /* Déclaration des propriétées du cadre et du contenu des images */
 
@@ -178,7 +177,8 @@ section {
     transform:translatex(-80%)
 }
 
-/*navigation avec images miniatures*/
+/* Navigation avec les images miniatures */
+
 .navigation_diapo {
     display: flex;
     justify-content: center;
@@ -193,7 +193,7 @@ section {
 
 .navigation_diapo img{
     max-height: 50px;
-    border: 3px solid white;
+    border: 3px solid #42484D;
     box-shadow:0 0 5px rgba(66, 72, 77, 0.6);
 }
 
@@ -203,15 +203,15 @@ section {
     }
 }
 
+/*** Partie a propos ***/
 
-/* Partie a propos */
 #presentation img {
     height: 350px;
     float: right;
     margin: 20px;
 }
 
-/* Partie sur les oeuvres */
+/*** Partie sur les oeuvres ***/
 
 .fiche_oeuvre {
     margin: 15px;
@@ -251,7 +251,8 @@ section {
     max-height: 200px; 
 }
 
-/* Formulaire de contact */
+/*** Formulaire de contact ***/
+
 .contact_form {
     padding-bottom: 20px;
 }
@@ -284,16 +285,4 @@ section {
 :required
 {
     background-color: red;
-}
-
-/***** Pied de page (footer) *****/
-
-footer {
-    background-color: #42484D;
-    display: flex;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    min-height: 200px;
-    flex-direction: column;
 }
